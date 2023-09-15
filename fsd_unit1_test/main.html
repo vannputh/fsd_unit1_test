@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightskyblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, main, aside, footer {
+            background-color: white;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        section {
+            flex: 1;
+            margin: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #1da1f2;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border: deepskyblue 1px solid;
+            border-collapse: collapse;
+        }
+
+        table img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+
+    </style>
+    <title>Twitter</title>
+</head>
+<body>
+<header>
+    <h1><img src="logo.png" height="23.175" width="28.5"/>   Welcome to Twitter</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Messages</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>Compose a Tweet</h2>
+        <form>
+            <textarea rows="4" cols="50" placeholder="What's happening?"></textarea>
+            <button type="submit">Tweet</button>
+        </form>
+    </section>
+</main>
+
+<main>
+    <section>
+        <h2>Tweet Feed</h2>
+        <table>
+            <tr>
+                <td><img src="profile_pics/ctey.jpg"/></td>
+                <td>
+                    <strong>@teyley</strong>
+                    <p>my new company ctey just launched!</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="profile_pics/ehoaw.jpg"/></td>
+                <td>
+                    <strong>@ehoaw</strong>
+                    <p>i want to study but my brother took me to watch a movie :(</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="profile_pics/puth.jpg" /></td>
+                <td>
+                    <strong>@puth</strong>
+                    <p>#first_tweet</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="profile_pics/eheang.jpg" height="764" width="764"/></td>
+                <td>
+                    <strong>@eheang</strong>
+                    <p>my game designer dont help me!</p>
+                </td>
+            </tr>
+
+        </table>
+    </section>
+
+    <section>
+        <h2>Trending</h2>
+        <ul>
+            <li>#WebDevelopment</li>
+            <li>#CSS3</li>
+            <li>#Flexbox</li>
+            <li>#JavaScript</li>
+</main>
+
+<footer>
+    <p>&copy; 2023 Twitter</p>
+</footer>
+</body>
+</html>
